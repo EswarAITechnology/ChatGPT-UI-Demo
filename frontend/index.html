@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zlaude AI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+      <button class="new-chat" id="newChat">
+        <span>＋</span>
+        <span>New chat</span>
+      </button>
+
+      <button class="close-sidebar" id="closeSidebar">×</button>
+    </div>
+
+    <div class="search-box">
+      <span>⌕</span>
+      <input type="text" placeholder="Search chats">
+    </div>
+
+    <div class="chat-history">
+
+      <div class="history-title">Today</div>
+
+      <button class="history-item">
+        <span>◯</span>
+        <span>Building an AI startup</span>
+      </button>
+
+      <button class="history-item">
+        <span>◯</span>
+        <span>Website development</span>
+      </button>
+
+      <button class="history-item">
+        <span>◯</span>
+        <span>Python project</span>
+      </button>
+
+      <div class="history-title">Previous 7 days</div>
+
+      <button class="history-item">
+        <span>◯</span>
+        <span>AI research ideas</span>
+      </button>
+
+      <button class="history-item">
+        <span>◯</span>
+        <span>Startup planning</span>
+      </button>
+
+    </div>
+
+    <div class="sidebar-bottom">
+
+      <button class="sidebar-button">
+        <span>✦</span>
+        <span>Explore</span>
+      </button>
+
+      <button class="sidebar-button">
+        <span>⚙</span>
+        <span>Settings</span>
+      </button>
+
+      <div class="profile">
+        <div class="avatar">E</div>
+        <div class="profile-info">
+          <strong>Eswar</strong>
+          <small>Zlaude AI</small>
+        </div>
+        <span>•••</span>
+      </div>
+
+    </div>
+
+  </aside>
+
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+
+      <button class="menu-button" id="openSidebar">
+        ☰
+      </button>
+
+      <button class="model-selector" id="modelSelector">
+        <strong>Zlaude</strong>
+        <span>AI</span>
+        <span class="chevron">⌄</span>
+      </button>
+
+      <div class="top-actions">
+
+        <button class="icon-button" title="Share">
+          ↗
+        </button>
+
+        <button class="icon-button" title="More">
+          •••
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <!-- CHAT AREA -->
+    <section class="chat-area" id="chatArea">
+
+      <!-- WELCOME -->
+      <div class="welcome" id="welcome">
+
+        <div class="logo-mark">
+          ∞
+        </div>
+
+        <h1>What can I help with?</h1>
+
+        <p>
+          Ask anything, explore ideas, write code, or build something new.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- COMPOSER -->
+    <div class="composer-wrapper">
+
+      <div class="suggestions" id="suggestions">
+
+        <button class="suggestion">
+          <span>💡</span>
+          Help me brainstorm
+        </button>
+
+        <button class="suggestion">
+          <span>💻</span>
+          Write some code
+        </button>
+
+        <button class="suggestion">
+          <span>📚</span>
+          Explain something
+        </button>
+
+      </div>
+
+
+      <div class="composer">
+
+        <button class="attach-button" id="attachButton">
+          ＋
+        </button>
+
+        <textarea
+          id="messageInput"
+          placeholder="Message Zlaude AI..."
+          rows="1"
+        ></textarea>
+
+        <div class="composer-actions">
+
+          <button class="tool-button" id="voiceButton">
+            🎙
+          </button>
+
+          <button class="send-button" id="sendButton">
+            ↑
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="disclaimer">
+        Zlaude AI can make mistakes. Check important information.
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- MODEL MENU -->
+  <div class="dropdown model-menu" id="modelMenu">
+
+    <button class="model-option active">
+      <div>
+        <strong>Zlaude Smart</strong>
+        <small>Fast and capable</small>
+      </div>
+      <span>✓</span>
+    </button>
+
+    <button class="model-option">
+      <div>
+        <strong>Zlaude Reasoning</strong>
+        <small>For complex tasks</small>
+      </div>
+    </button>
+
+    <button class="model-option">
+      <div>
+        <strong>Zlaude Fast</strong>
+        <small>Quick responses</small>
+      </div>
+    </button>
+
+  </div>
+
+
+  <!-- MOBILE OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
